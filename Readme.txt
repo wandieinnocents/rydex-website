@@ -1,5 +1,5 @@
 # RYDEX-WEBSITE
-Website to show information on rydex
+Website to show information on rydex mobile app
 
 # Getting Started
 

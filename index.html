@@ -694,43 +694,43 @@
 
           <div class="row">
             <div class="col-lg-6">
-              <iframe
-                class="mb-4 mb-lg-0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                frameborder="0"
-                style="border: 0; width: 100%; height: 384px"
-                allowfullscreen
-              ></iframe>
+             
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7516302656004!2d32.576276414150804!3d0.33127776409474263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb74c99e53e3%3A0xb1ba9bf94381cd71!2sRegus%20-%20Kampala%2C%20Nakasero!5e0!3m2!1sen!2sug!4v1645831042756!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="background-color:white; padding: 12px;">
               <!-- CONTACT FIRST FORM -->
-              <!-- <form
-                action="forms/contact.php"
+              <form
+                action="php/envia_fale.php"
                 method="post"
                 role="form"
-                class="php-email-form"
+               
               >
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
-                      name="name"
+                      name="first_name"
                       class="form-control"
-                      id="name"
+                      
                       placeholder="Your Name"
                       required
                     />
                   </div>
+                  
                   <div class="col-md-6 form-group mt-3 mt-md-0">
+                  
                     <input
-                      type="email"
+                      type="text"
+                      name="last_name"
                       class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email"
+                      
+                      placeholder="Last Name"
                       required
                     />
+                  
+                    
                   </div>
                 </div>
                 <div class="form-group mt-3">
@@ -738,11 +738,23 @@
                     type="text"
                     class="form-control"
                     name="subject"
-                    id="subject"
+                    
                     placeholder="Subject"
                     required
                   />
                 </div>
+                
+                 <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                
                 <div class="form-group mt-3">
                   <textarea
                     class="form-control"
@@ -752,69 +764,19 @@
                     required
                   ></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
+                
+                
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  
+                  <input style="margin-top:15px; " type="submit" name="BTEnvia" class="btn btn-primary py-3 px-5 btn-block" value="Submit"
+                              onClick="alert('Message Sent Successfuly!'); return true">
+                  
                 </div>
-              </form> -->
+              </form> 
               <!-- END OF FIRST CONTACT FORM -->
 
 
 
-
-
-
-
-
-              <!-- SECOND CONTACT FORM -->
-              <div class="container-fluid text-center">
-                <div class="row justify-content-md-center">
-                  <div id="id-contato" class="contato">
-                    <div class="container">
-                      <form class="form-contact" tabindex="1" action="php/envia_fale.php" method="post">
-                        <div class="form-group row">
-                          <div class="col-md-6 mb-3 mb-lg-0">
-                            <input name="nome" type="text" class="form-control" placeholder="Nome">
-                          </div>
-                          <div class="col-md-6">
-                            <input name="sobrenome" type="text" class="form-control" placeholder="Sobrenome">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-12">
-                            <input name="assunto" type="text" class="form-control" placeholder="Assunto">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-12">
-                            <input name="email" type="email" class="form-control" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-12">
-                            <textarea name="mensagem" class="form-control" id="" cols="30" rows="6"
-                              placeholder="Escreva sua mensagem aqui."></textarea>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-12 btn-submit">
-                            <input type="submit" name="BTEnvia" class="btn btn-primary py-3 px-5 btn-block" value="Enviar Mensagem"
-                              onClick="alert('Enviado com Sucesso!'); return true">
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- END OF SECOND CONTACT FORM -->
               
             </div>
           </div>

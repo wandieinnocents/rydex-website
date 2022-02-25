@@ -704,7 +704,8 @@
             </div>
 
             <div class="col-lg-6">
-              <form
+              <!-- CONTACT FIRST FORM -->
+              <!-- <form
                 action="forms/contact.php"
                 method="post"
                 role="form"
@@ -761,7 +762,60 @@
                 <div class="text-center">
                   <button type="submit">Send Message</button>
                 </div>
-              </form>
+              </form> -->
+              <!-- END OF FIRST CONTACT FORM -->
+
+
+
+
+
+
+
+
+              <!-- SECOND CONTACT FORM -->
+              <div class="container-fluid text-center">
+                <div class="row justify-content-md-center">
+                  <div id="id-contato" class="contato">
+                    <div class="container">
+                      <form class="form-contact" tabindex="1" action="php/envia_fale.php" method="post">
+                        <div class="form-group row">
+                          <div class="col-md-6 mb-3 mb-lg-0">
+                            <input name="nome" type="text" class="form-control" placeholder="Nome">
+                          </div>
+                          <div class="col-md-6">
+                            <input name="sobrenome" type="text" class="form-control" placeholder="Sobrenome">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <input name="assunto" type="text" class="form-control" placeholder="Assunto">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <input name="email" type="email" class="form-control" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <textarea name="mensagem" class="form-control" id="" cols="30" rows="6"
+                              placeholder="Escreva sua mensagem aqui."></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-12 btn-submit">
+                            <input type="submit" name="BTEnvia" class="btn btn-primary py-3 px-5 btn-block" value="Enviar Mensagem"
+                              onClick="alert('Enviado com Sucesso!'); return true">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END OF SECOND CONTACT FORM -->
+              
             </div>
           </div>
         </div>
